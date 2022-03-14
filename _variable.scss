@@ -1,0 +1,21 @@
+$colors:(
+	"yellow-color":#fbffa7,
+	"orange-color":#ff764d,
+	"pink-color":#d5b3ff,
+	"violet-color":#b1c5ff,
+	"green-color":#b6ffc0,
+	"blue-color":#0000ff,
+);
+@function color($color-style){
+	@return map-get($colors , $color-style )
+}
+$font-sizes:(
+	"font-size-regular":0.875rem,
+	"font-size-small":1rem,
+	"font-size-normal":1.25rem,
+	"font-size-big":1.875rem
+
+);
+@function font-size($font-size-style){
+	@return map-get($font-sizes , $font-size-style )
+}
